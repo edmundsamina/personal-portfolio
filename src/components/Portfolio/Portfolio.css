@@ -1,59 +1,59 @@
 .portfolio-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120vh;
+  width: 100vw;
+  font-family: var(--textFont);
+
+}
+
+
+.grid-container{
     display: grid;
     grid-template-columns:  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) ;
+    align-items: center;
+    justify-content: center;
     padding: 40px;
     justify-items: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    width: 90%;
 }
 
 
 .card {
-    position: relative;
-    display: flex;
+   
+  display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: 'lemon';
+    align-items: flex-startz;
+     font-family: var(--textFont);
     font-weight: 100;
     margin: 40px auto;
-    width: 75%;
-    height:  80%;
+    width: 90%;
+    height:  90%;
+
     background: #ffffff;
-    border-radius: 2px;
-  }
+   
   
-  .card::before,
-  .card::after {
-    content: '';
-    position: absolute;
-    bottom: 10px;
-    width: 40%;
-    height: 10px;
-    box-shadow: 0 5px 14px rgba(0,0,0,.7);
-    z-index: -1;
-    transition: all .3s ease-in-out;
-  }
+   }
+   
+ 
   
-  .card::before {
-    left: 15px;
-    transform: skew(-5deg) rotate(-5deg);
+
+  .app-image{
+    height: 300px;
   }
-  
-  .card::after {
-    right: 15px;
-    transform: skew(5deg) rotate(5deg);
+
+  .heading{
+    font-size: 2rem;
+    border-bottom: solid 2px;
+    width: 85%;
+
   }
-  
-  .card:hover::before,
-  .card:hover::after {
-    box-shadow: 0 2px 14px rgba(0,0,0,.4);
-  }
-  
-  .card:hover::before {
-    left: 5px;
-  }
-  
-  .card:hover::after {
-    right: 5px;
+  .project-description{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 350px;
   }
