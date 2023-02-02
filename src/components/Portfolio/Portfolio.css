@@ -23,7 +23,9 @@
 
 
 .card {
-   
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+ 
   display: flex;
     justify-content: center;
     align-items: flex-startz;
@@ -32,18 +34,14 @@
     margin: 40px auto;
     width: 90%;
     height:  90%;
+    position: relative;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow:  rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
-    background: #ffffff;
-   
-  
    }
-   
- 
-  
 
-  .app-image{
-    height: 300px;
-  }
+  
 
   .heading{
     font-size: 2rem;
