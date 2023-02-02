@@ -1,27 +1,29 @@
 import "./Contact.css";
 import {useRef} from 'react';
+import React from 'react';
+
 
 export default function Contact() {
+
+
 const firstName = useRef();
 const lastName = useRef();
 const email = useRef();
 const message = useRef();
 
-function onFormClick(e){
-e.preventDefault()
-console.log(firstName.current.value)
-}
+
   return (
     <div className="contact-container">
       <h3 className="heading-two">Contact</h3>
       <div className="contact-form-container">
       <div className="form-container">
-        <form className="form">
-          <input ref ={firstName} type="text" placeholder="First-name"/>      
-          <input  ref ={lastName} type="text" placeholder="Last-name"/>        
-          <input ref ={email} type="email" placeholder="Email"/>      
-          <textarea ref ={message} className="text-area" type="text" placeholder="Message"/>
-          <button className="form-button" onClick={onFormClick}>Submit</button>
+        <form className="form" action="https://formspree.io/f/mjvdglaj"
+      method="POST">
+          <input ref ={firstName} type="text" placeholder="First-name" name="First-name"/>      
+          <input  ref ={lastName} type="text" placeholder="Last-name" name="Last-name"/>           
+          <input ref ={email} type="email" placeholder="Email" name="email"/>            
+          <textarea ref ={message} className="text-area" type="text" placeholder="Message" name="message"/>       
+          <button className="form-button" type="submit" >Submit</button>
         </form>
         </div>
         <div className="contact-text-container">
