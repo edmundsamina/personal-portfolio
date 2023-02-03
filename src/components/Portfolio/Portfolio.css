@@ -25,27 +25,102 @@
 .card {
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
- 
-  display: flex;
-    justify-content: center;
-    align-items: flex-startz;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
      font-family: var(--textFont);
-    font-weight: 100;
-    margin: 40px auto;
     width: 90%;
     height:  90%;
+    transform-style: preserve-3d;
     position: relative;
-    margin: 40px auto;
+    transition: 150ms;
+    cursor: pointer;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
     border-radius: 10px;
     box-shadow:  rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
    }
 
+   .card.flip {
+    --rotate-y: 180deg;
+  }
   
+  .front, .back{
+    height: 100%;
+    width: 100%
+  }
 
+  .back{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card .front,
+.card .back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+
+   .header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/images/weather.png');
+    background-size: cover;
+    background-repeat: no-repeat;  
+    border-radius: 10px 10px 0px 0px;
+    height: 50%;
+    width: 100%;
+   }
+  
+   .header-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 2.5rem;
+    color: white;
+
+   }
+
+   .card-body-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 10px;
+   }
+
+  .links {
+    display: flex;
+gap: 20px  }
+
+.more-info{
+  align-self: flex-end;
+}
+
+.more-info:hover{
+cursor: pointer;
+text-decoration:underline;
+color: var( --highLight);
+}
+
+.more-info:{
+
+}
   .heading{
     font-size: 2rem;
     border-bottom: solid 2px;
+    
     width: 85%;
 
   }
