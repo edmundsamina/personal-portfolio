@@ -1,13 +1,12 @@
 import "./Portfolio.css";
 import img from '../../assets/images/portfolio-img.png'
-export default function PortfolioCard(props) {
+
+export default function ReversePortfolioCard(props) {
 
   return (
   
     <div className="card">
-          <div className="image-container">
-          <img src = {img} alt = {props.title}/>
-          </div>
+         
           <div className="card-body-container">
            
             <h3 className="header-overlay">{props.title}</h3>
@@ -25,6 +24,10 @@ export default function PortfolioCard(props) {
               <h4>Live Site</h4>
               <h4>Repository</h4>
             </div>
+          </div>
+
+          <div className="image-container">
+          <img src = {img} alt = {props.title}/>
           </div>
           </div>
 

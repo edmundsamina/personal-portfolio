@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 120vh;
+  min-height: 100vh;
   width: 100vw;
   font-family: var(--textFont);
 
@@ -11,7 +11,9 @@
 
 .grid-container{
     display: grid;
-    grid-template-columns:  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns:  minmax(0, 1fr);
+    grid-template-rows:  minmax(400px, 1fr)  minmax(200px, 1fr)  minmax(200px, 1fr)  minmax(200px, 1fr);
+
     align-items: center;
     justify-content: center;
     padding: 40px;
@@ -23,80 +25,36 @@
 
 
 .card {
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
      font-family: var(--textFont);
     width: 90%;
     height:  90%;
-    transform-style: preserve-3d;
-    position: relative;
-    transition: 150ms;
+    gap: 50px;
     cursor: pointer;
-    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+   
     border-radius: 10px;
-    box-shadow:  rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
    }
 
-   .card.flip {
-    --rotate-y: 180deg;
-  }
-  
-  .front, .back{
-    height: 100%;
-    width: 100%
-  }
+   
 
-  .back{
-    display: flex;
-    flex-direction: column;
-  }
-  .card .front,
-.card .back {
-  position: absolute;
-  backface-visibility: hidden;
+.image-container{
+  width: 50%;
 }
-
-.card .back {
-  transform: rotateY(180deg);
-}
-
-
-   .header-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../../assets/images/weather.png');
-    background-size: cover;
-    background-repeat: no-repeat;  
-    border-radius: 10px 10px 0px 0px;
-    height: 50%;
-    width: 100%;
-   }
   
-   .header-overlay{
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    font-size: 2.5rem;
-    color: white;
-
-   }
+  
 
    .card-body-container{
+    height: 90%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 15px;
-    gap: 10px;
+    gap: 20px;
    }
 
   .links {
@@ -113,9 +71,7 @@ text-decoration:underline;
 color: var( --highLight);
 }
 
-.more-info:{
 
-}
   .heading{
     font-size: 2rem;
     border-bottom: solid 2px;
