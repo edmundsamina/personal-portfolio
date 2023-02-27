@@ -1,6 +1,8 @@
 .nav-container{
-    height:  3rem;
-    margin: 0.5rem;
+    position: fixed;
+    background-color: rgb(246, 246, 246, 0.9);
+    backdrop-filter: blur(10px);
+    width: 100%;
     display: flex; 
     justify-content: space-between;
     align-items: center;
@@ -9,18 +11,15 @@
   
 }
 
-
-
 .nav-list-grid{
     text-decoration: none;
     list-style-type: none;
     display: flex;
     column-gap: 2rem;
-    padding-right: 20px;
+    padding-right: 30px;
   
 
 }
-
 
 .nav-link{
     display: flex;
@@ -39,6 +38,7 @@
 }
 
 .logo{
+    margin: 20px;
     height: 50px;
     width: 50px;
 }

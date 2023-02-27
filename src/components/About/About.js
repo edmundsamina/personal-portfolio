@@ -1,44 +1,38 @@
 import "./About.css";
-import icon1 from '../../assets/tech-icons/Group 36.png'
-import icon2 from '../../assets/tech-icons/Group 37.png'
-import icon3 from '../../assets/tech-icons/Group 38.png'
-import icon4 from '../../assets/tech-icons/Group 39.png'
-import icon5 from '../../assets/tech-icons/Group 40.png'
-import icon6 from '../../assets/tech-icons/Group 41.png'
+import { skillsData } from "../Data/data";
 
 export default function About() {
   return (
-    <section className="about-section">
+    <section  id="about" className="about-section">
       <h2 className="about-heading">About Me</h2>
       <div className="about-grid">
+      <div className="skills-contaier">
+          <div className="skills-grid">
+            {skillsData.map((skill) => {
+              return (
+                <img
+                  className="skills-icons"
+                  src={skill.icon}
+                  alt={skill.name}
+                />
+              );
+            })}
+          </div>
+        </div>
         <div className="about-text">
           <h3>Who am I?</h3>
           <p>
-            I am aspiring to become a full-stack developer. I have a background
-            in Architecture, before moving to South Korea to teach English. I
-            had always thought coding was out of reach for me before starting
-            the boot camp, but I was pleasantly surprised by how much I enjoyed
-            it and how it has helped me to use both my logical and creative
-            side.{" "}
+            I'm an ex-teacher, and architecture graduate with a strong
+            background in design and problem-solving. Recently, I completed a
+            16- week coding bootcamp at the School of Code to transition into
+            the tech industry. I'm passionate about accessibility, the power of
+            education and eager to learn more! I'm interested in both the
+            front-end and back-end, and I'm hoping to become a fullstack
+            developer! These are some of the tech stack I have experience, and
+            I'm looking forward to adding more!
           </p>
         </div>
-        <div className="skills-contaier">
-          <h3>Skills</h3>
-          <div className="skills-grid">
-
-          <img className="skills-icons" src={icon1} alt="icons"/>
-          <img className="skills-icons" src={icon2} alt="icons"/>
-          <img className="skills-icons" src={icon3} alt="icons"/>
-          <img className="skills-icons" src={icon4} alt="icons"/>
-          <img className="skills-icons" src={icon5} alt="icons"/>
-          <img className="skills-icons" src={icon6} alt="icons"/>
-          <img className="skills-icons" src={icon6} alt="icons"/>
-          <img className="skills-icons" src={icon6} alt="icons"/>
-          <img className="skills-icons" src={icon6} alt="icons"/>
-          <img className="skills-icons" src={icon6} alt="icons"/>
-
-</div>
-        </div>
+       
       </div>
     </section>
   );

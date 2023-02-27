@@ -1,17 +1,28 @@
 .about-section{
+    font-family: var(--textFont);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 60vh;
+    height: 70vh;
 }
 
+.about-text > p {
+    font-size: 1.2rem;
+    word-spacing: 5px;
 
+}
+
+.about-text > h3 {
+    font-size: 2rem;
+    word-spacing: 5px;
+
+}
 .about-heading{
     border-bottom: solid 2px;
-    font-size: 2rem;
+    font-size: 2.8rem;
     width: 85%;
-    text-align: end;
+    text-align: start;
 }
 
 .about-grid{
@@ -30,14 +41,15 @@
  .skills-grid{
     height: 100%;
     width: 100%;
+    gap: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
    
 }
 
 .skills-icons{
-    height: 70%;
+    width: 100%;
 
 }
 .about-text{

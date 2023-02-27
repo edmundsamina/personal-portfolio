@@ -2,9 +2,16 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <div className="contact-container">
+    <div  id="contact" className="contact-container">
       <h3 className="heading-two">Contact</h3>
       <div className="contact-form-container">
+      <div className="contact-text-container">
+          <div className="text-container">
+            <h3 className="contact-title">Get in Touch!</h3>
+            <h4 className="sub-title">Let's talk about everything.</h4>
+          
+          </div>
+        </div>
         <div className="form-container">
           <form
             className="form"
@@ -26,19 +33,7 @@ export default function Contact() {
             </button>
           </form>
         </div>
-        <div className="contact-text-container">
-          <div className="text-container">
-            <h3 className="contact-title">Get in Touch!</h3>
-            <h4 className="sub-title">Let's talk about everything.</h4>
-            <p className="contact-description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-              deleniti itaque similique magni. Magni, laboriosam perferendis
-              maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Nihil deleniti itaque similique magni. Magni, laboriosam
-              perferendis maxime!
-            </p>
-          </div>
-        </div>
+       
       </div>
     </div>
   );

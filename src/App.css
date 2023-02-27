@@ -46,6 +46,7 @@
     3. Allow percentage-based heights in the application
   */
   html, body {
+    scroll-behavior: smooth;
     height: 100%;
     overflow-x: hidden;
     background-color: var(--background);
