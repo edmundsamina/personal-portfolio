@@ -15,11 +15,11 @@ function Navbar() {
         <img className="logo" src={logo} alt="logo" />
       </a>
 
-      <button className="hamburger" onClick={handleToggle}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </button>
+      <div className="hamburger" onClick={handleToggle}>
+        <span className="line"></span>
+        <span className="line"></span>
+        <span className="line"></span>
+      </div>
 
       <div className={`nav-menu`}>
         <ul className="nav-list-grid">
