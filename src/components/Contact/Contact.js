@@ -12,8 +12,8 @@ export default function Contact() {
             <h3 className="contact-title">Get in Touch!</h3>
             <h4 className="sub-title">Fill out the contact form to the right, or feel free to contact me via my social media links below!</h4>
           <div className="social-media">
-           <a target="_blank"  href="https://www.linkedin.com/in/amina-edmunds/"><img  src={linkdin} alt="linkdin social link"/></a> 
-           <a target="_blank" href="https://github.com/edmundsamina"> <img  src={github} alt="github social link"/></a> 
+           <a target="_blank"  rel="noreferrer" href="https://www.linkedin.com/in/amina-edmunds/"><img  src={linkdin} alt="linkdin social link"/></a> 
+           <a target="_blank" rel="noreferrer" href="https://github.com/edmundsamina"> <img  src={github} alt="github social link"/></a> 
 
           </div>
           </div>

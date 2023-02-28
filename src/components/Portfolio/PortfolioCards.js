@@ -15,8 +15,8 @@ export default function PortfolioCard(props) {
             {props.desc}
             </p>
             <div className="links">
-              <a  target="_blank" href={props.url}>Live Site</a>
-              <a  target="_blank" href={props.repo}>Repository</a>
+              <a  rel="noreferrer" target="_blank" href={props.url}>Live Site</a>
+              <a  rel="noreferrer" target="_blank" href={props.repo}>Repository</a>
             </div>
           </div>
           </div>
