@@ -24,22 +24,22 @@ function Navbar() {
       <div className={`nav-menu`}>
         <ul className="nav-list-grid">
           <li className="nav-item">
-            <a href="#home" className="nav-link" onClick={handleToggle}>
+            <a href="#home" className="nav-link">
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a href="#about" className="nav-link" onClick={handleToggle}>
+            <a href="#about" className="nav-link" >
               About
             </a>
           </li>
           <li className="nav-item">
-            <a href="#portfolio" className="nav-link" onClick={handleToggle}>
+            <a href="#portfolio" className="nav-link" >
               Portfolio
             </a>
           </li>
           <li className="nav-item">
-            <a href="#contact" className="nav-link" onClick={handleToggle}>
+            <a href="#contact" className="nav-link" >
               Contact
             </a>
           </li>
