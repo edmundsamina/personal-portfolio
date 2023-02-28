@@ -1,4 +1,6 @@
 import "./Contact.css";
+import linkdin from '../../assets/images/indeed.png'
+import github from '../../assets/images/github.png'
 
 export default function Contact() {
   return (
@@ -8,8 +10,12 @@ export default function Contact() {
       <div className="contact-text-container">
           <div className="text-container">
             <h3 className="contact-title">Get in Touch!</h3>
-            <h4 className="sub-title">Let's talk about everything.</h4>
-          
+            <h4 className="sub-title">Fill out the contact form to the right, or feel free to contact me via my social media links below!</h4>
+          <div className="social-media">
+           <a target="_blank"  href="https://www.linkedin.com/in/amina-edmunds/"><img  src={linkdin} alt="linkdin social link"/></a> 
+           <a target="_blank" href="https://github.com/edmundsamina"> <img  src={github} alt="github social link"/></a> 
+
+          </div>
           </div>
         </div>
         <div className="form-container">

@@ -4,7 +4,7 @@ export default function ReversePortfolioCard(props) {
 
   return (
   
-    <div className="card">
+    <div className="card card-reverse">
          
           <div className="card-body-container">
            

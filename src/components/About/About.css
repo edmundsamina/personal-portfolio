@@ -63,3 +63,38 @@
     justify-content: center;
     width: 40%;
 }
+
+@media screen and (max-width: 920px) {
+    .about-grid{
+      flex-direction:column-reverse;
+    }
+    
+    .skills-contaier, .skills-grid, .about-text{
+      width: 100%;
+    }
+    }
+
+
+    
+@media screen and (max-width: 600px) {
+    .about-heading {
+        font-size: 2rem;
+    }
+
+    .about-text > h3{
+        font-size: 1.5rem;
+    }
+
+    .about-text > p {
+        font-size: 1rem;
+        word-spacing: 2px;
+    }
+
+    .about-grid {
+    padding: 20px;
+}
+
+.skills-grid {
+   gap: 10px;
+}
+    }

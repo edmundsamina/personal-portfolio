@@ -116,3 +116,48 @@
   transition: 0s;
   transform: translate(0, 5%);
 }
+
+
+@media screen and (max-width: 920px) {
+  .home-image{
+    display: none;
+  }
+  .home-intro{
+    width: 80%;
+  }
+
+  .home-a-tag{
+    align-self: center;
+  }
+
+
+  .home-button-icon{
+    height: 30px;
+  }
+
+  .home-button {
+    font-size: 1.4rem;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-title {
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+  }
+  
+  .home-button{
+    font-size: 1rem;
+  }
+
+  .home-button-icon{
+    height: 20px;
+  }
+
+  .home-intro > a {
+ 
+    height: 5%;
+  
+}
+}

@@ -1,5 +1,5 @@
 .nav-container{
-    position: fixed;
+    position:fixed;
     background-color: rgb(246, 246, 246, 0.9);
     backdrop-filter: blur(10px);
     width: 100%;
