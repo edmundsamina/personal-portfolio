@@ -50,7 +50,11 @@
 }
 
 .nav-menu-active{
-    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--textColour);
     color: whitesmoke;
     height: 150px;
     width: 150px;
@@ -75,6 +79,18 @@
   }
   
 
+  .hamburger-close{
+height: 20px;
+  }
+
+  .nav-ul{
+    padding: 10px;
+  }
+  
+  .hamburger-close {
+    align-self:flex-start;
+    margin: 10px;
+  }
 @media screen and (max-width: 768px) {
     .nav-menu {
       display: none;

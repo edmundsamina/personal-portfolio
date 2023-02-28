@@ -1,5 +1,6 @@
 import  { useState } from "react";
 import logo from "../../assets/images/logo.png";
+import cross from "../../assets/images/cross.png"
 import "./Navbar.css";
 
 function Navbar() {
@@ -47,12 +48,9 @@ function Navbar() {
       </div>
 
   
-        <ul className={`${isOpen ? "nav-menu-active" : "nav-menu-hidden"}`}>
-        <button className="hamburger" onClick={handleToggle}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </button>
+        <div className={`${isOpen ? "nav-menu-active" : "nav-menu-hidden"}`}>
+        <img src={cross} className="hamburger-close" onClick={handleToggle}/>
+          <ul className="nav-ul">
           <li className="nav-item-active">
             <a href="#home" className="nav-link-active" >
               Home
@@ -73,7 +71,8 @@ function Navbar() {
               Contact
             </a>
           </li>
-        </ul>
+          </ul>
+        </div>
   
     </nav>
   );
