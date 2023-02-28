@@ -24,8 +24,10 @@ export default function Contact() {
             action="https://formspree.io/f/mjvdglaj"
             method="POST"
           >
+          <div className="contact-name-input">
             <input required type="text" placeholder="First-name" name="First-name" />
             <input required type="text" placeholder="Last-name" name="Last-name" />
+            </div>
             <input required type="email" placeholder="Email" name="email" />
             <textarea
               className="text-area"
